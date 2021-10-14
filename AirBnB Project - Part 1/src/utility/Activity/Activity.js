@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './Activity.css';
 import { Link } from 'react-router-dom';
 class Activity extends Component{
-
-
     render(){
         const { activityType, cost, id, image, rating, title, totalRatings } = this.props.activity;
         return(

@@ -19,7 +19,8 @@ class SingleFullVenue extends Component {
             const singleVenue = data[0].data;
             const points = singleVenue.points.split(',')
                 .map((point, index) => { return (<Points key={index} pointDesc={data[1].data} point={point} />) });
-            const amenities = singleVenue.amenities.split(',').map((amenity, index) => { return (<div key={index}><i className="material-icons" >done</i>{amenity}</div>)
+            const amenities = singleVenue.amenities.split(',')
+                .map((amenity, index) => { return (<div key={index}><i className="material-icons" >done</i>{amenity}</div>)
         });
         this.setState({ singleVenue, points, amenities });
     }

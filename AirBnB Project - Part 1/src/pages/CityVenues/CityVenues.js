@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './CityVenues.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios'
 import Spinner from '../../utility/Spinner/Spinner';

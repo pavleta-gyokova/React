@@ -16,7 +16,7 @@ class Venue extends Component{
                         <span className="location">{location}</span>
                         <span className="rating right"><i className="material-icons">star</i>{rating}</span>
                     </div>
-                    <div className="title">${title}</div>
+                    <div className="title">{title}</div>
                     <div className="price-per-night">${pricePerNight}/night</div>
                     
                 </Link>

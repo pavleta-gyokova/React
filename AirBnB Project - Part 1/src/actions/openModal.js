@@ -1,4 +1,4 @@
-export default (openClose, content) =>{
+function openModal(openClose, content){
     return{
         type: 'OPEN_MODAL',
         payload: {
@@ -7,3 +7,5 @@ export default (openClose, content) =>{
         }
     }
 }
+
+export default openModal

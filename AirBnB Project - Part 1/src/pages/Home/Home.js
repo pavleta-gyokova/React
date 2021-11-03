@@ -80,7 +80,6 @@ class Home extends Component {
 
 
     render() {
-        // console.log(this.state.reVenues.venues)
         if (this.state.cities.length === 0) {
             return (
                 <Spinner />

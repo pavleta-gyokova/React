@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 class Venue extends Component{
 
     render(){
-        // console.log(this.props.city);
         const { id, title, location, pricePerNight, imageUrl, rating } = this.props.venue;
         return(
             <div className="venue col s12">
                 <Link to={`/venue/${id}`}>
                     <div className="image">
-                        <img src={imageUrl} />
+                        <img src={imageUrl} alt='Venue'/>
                     </div>
                     <div className="location-stars">
                         <span className="location">{location}</span>
@@ -26,4 +25,3 @@ class Venue extends Component{
 }
 
 export default Venue;
-    

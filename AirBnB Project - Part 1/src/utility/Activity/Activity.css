@@ -1,12 +1,17 @@
-.activities{
-    margin-top:20px;
-}
-
-.activities .activity a{
-    color: #000;
+.activities {
+    margin-top: 20px;
 }
 
 .activities .activity img{
     max-width: 100%;
     border-radius: 8px;
 }
+
+.material-icons {
+    font-size: 13px;
+}
+
+.activity a{
+    color: black;
+}
+

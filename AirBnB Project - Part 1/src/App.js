@@ -8,6 +8,7 @@ import Modal from './utility/Modal/Modal';
 import CityVenues from './pages/CityVenues/CityVenues';
 import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess';
 import Account from './pages/Account/Account';
+import Search from './pages/Search/Search';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
         <Route path='/' component={Modal}></Route>
         <Route exact path='/payment-success/:token' component={PaymentSuccess}></Route>
         <Route path='/account' component={Account}></Route>
+        <Route path='/search/:searchTerm' component={Search}></Route>
       </Router>
 
     );

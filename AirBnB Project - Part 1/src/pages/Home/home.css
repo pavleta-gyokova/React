@@ -4,11 +4,15 @@
 
 .home .upper-fold{
     height: 100vh !important;
-    background-image: url('https://a0.muscache.com/4ea/air/r:w775-h518-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg');
+    background-image: url('https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/Airbnb_Hollywood_Vintage_Home.jpg');
     background-size: cover;
 }
 
 .lower-fold{
+    margin-top: -20px;
+    background-image: url('https://webgradients.com/public/webgradients_png/050%20Snow%20Again.png');
+    background-size: cover;
+    padding-top: 15px;
     padding-left: 80px;
     padding-right: 80px;
 }

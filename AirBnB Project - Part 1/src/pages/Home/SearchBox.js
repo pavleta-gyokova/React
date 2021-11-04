@@ -1,9 +1,9 @@
 import './SearchBox.css';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 
 class SearchBox extends Component {
-    constructor(){
+    constructor() {
         super()
 
         this.state = {
@@ -14,34 +14,38 @@ class SearchBox extends Component {
         }
     }
 
-    changeWhere = (event) =>{
+    changeWhere = (event) => {
         this.setState({
-            where : event.target.value
+            where: event.target.value
         })
     }
 
-    ChangeCheckIn = (event) =>{
+    ChangeCheckIn = (event) => {
         this.setState({
-            checkIn : event.target.value
+            checkIn: event.target.value
         })
     }
 
-    ChangeCheckout = (event) =>{
+    ChangeCheckout = (event) => {
         this.setState({
-            checkout : event.target.value
+            checkout: event.target.value
         })
     }
 
-    changeGuest = (event) =>{
+    changeGuest = (event) => {
         this.setState({
-            guest : event.target.value
+            guest: event.target.value
         })
     }
-    render(){
-        return(
+    submitSearch = (event) => {
+        event.preventDefault();
+        this.props.history.push(`/search/${this.state.where}`)
+    }
+    render() {
+        return (
             <div className='home-search-box col m4'>
                 <h1>Book unique places to stay and things to do.</h1>
-                <form className='search-box-form'>
+                <form onSubmit={this.submitSearch} className='search-box-form'>
                     <div className='col m12'>
                         <div className='form-label'>Where</div>
                         <div className='input-field' id='where'>
@@ -54,14 +58,14 @@ class SearchBox extends Component {
                         <div className='input-field' id='check-in'>
                             <input onChange={this.ChangeCheckIn} placeholder='Anywhere' value={this.state.checkIn} type='date' />
                         </div>
-                    </div> 
+                    </div>
 
                     <div className='col m6'>
                         <div className='form-label'>CHECK-OUT</div>
                         <div className='input-field' id='check-out'>
                             <input onChange={this.ChangeCheckout} placeholder='Anywhere' value={this.state.checkout} type='date' />
                         </div>
-                    </div> 
+                    </div>
 
                     <div className='col m12'>
                         <div className='form-label'>Guests</div>
@@ -72,7 +76,7 @@ class SearchBox extends Component {
 
                     <div className='col m12 submit-btn'>
                         <div className='input-field' id='submit-btn'>
-                            <input className='btn-large waves-effect waves-light red accent-2' type='submit'/>
+                            <input className='btn-large waves-effect waves-light red accent-2' type='submit' />
                         </div>
                     </div>
 

@@ -23,7 +23,7 @@ class Account extends Component {
         let upcomingBookings = [];
         response.data.forEach(booking => {
             const today = moment(); // get today's date so we know which are past and future bookings
-            const checkOutDate = moment(booking.checkOut);
+            const checkOutDate = moment(booking.checkIn);
             const diffDays = checkOutDate.diff(today, 'days');
             if (diffDays < 0) {
                 pastBookings.push(booking);

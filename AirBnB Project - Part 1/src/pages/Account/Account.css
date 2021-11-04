@@ -10,6 +10,7 @@
 
 .account .sidenav.sidenav-fixed{
     top: 64px;
+    background: transparent;
 }
 
 .account .center-align{
@@ -29,3 +30,10 @@
 .booking td, .booking th{
     vertical-align: top;
 }
+
+/* body{
+    height: 100vh !important;
+    background-image: url('https://webgradients.com/public/webgradients_png/094%20Cloudy%20Apple.png');
+    background-size: cover;
+    
+} */

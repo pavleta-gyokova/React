@@ -37,12 +37,13 @@ function CityWeatherHooks(props) {
     return (
         <div className="container">
                 <div className='city-name'>
-                    <h4>{cityData.name}</h4>
+                    <h4>{cityData.name} - {cityData.main.temp.toFixed(0)} &#x2103;</h4>
                 </div>
                 <div className='temp'>
-                    {cityData.main.temp.toFixed(0)} &#x2103;
                     <img src={iconUrl} alt='icon' />
+                    {cityData.weather[0].description}
                     <p>High: {cityData.main.temp_max.toFixed(0)} &#x2103; - Low: {cityData.main.temp_min.toFixed(0)} &#x2103;</p>
+                    <p>Feels like: {cityData.main.feels_like.toFixed(0)} &#x2103;</p>
                 </div>
 
             </div>

@@ -37,7 +37,7 @@ function CityWeatherHooks(props) {
     return (
         <div className="container">
             <div className='city-name'>
-                <h4>{cityData.name} - {cityData.main.temp.toFixed(0)} &#x2103;</h4>
+                <h4>{cityData.name} : {cityData.main.temp.toFixed(0)} &#x2103;</h4>
             </div>
             <div className='temp'>
                 <img src={iconUrl} alt='icon' />

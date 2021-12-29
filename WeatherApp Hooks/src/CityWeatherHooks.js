@@ -23,7 +23,6 @@ function CityWeatherHooks(props) {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.cityName}&units=metric&appid=ab34560068dc014a04dae465e051823b`;
             const response = await axios.get(url);
             changeCityData(response.data);
-            console.log(response.data);
         };
         fetchWeather();
     }, [props.cityName]);

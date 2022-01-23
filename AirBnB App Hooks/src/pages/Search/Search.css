@@ -1,0 +1,65 @@
+.search{
+    margin-top: 60px;
+    background: none;
+    
+}
+/* .text{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    text-align: center;
+    position: relative;
+    color: black;
+    padding-top: 12%;
+} */
+/* .link{
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+} */
+
+.all{
+    height: 100vh !important;
+    background-image: url('https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/Airbnb_New_Zealand_Arrowtown_House.jpg');
+    background-size: cover;
+    filter: blur(10px);
+    -webkit-filter: blur(0px);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  /* Position text in the middle of the page/image */
+  .match {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  p{
+    font-size: 200%;
+    text-decoration: underline;
+  }
+
+  

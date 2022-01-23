@@ -1,4 +1,4 @@
-## Routes used for first version:
+## Routes used:
 ### Base API URL - https://airbnb-api.robertbunch.dev
 - /cities/recommended
 - /cities/:feature

@@ -1,0 +1,6 @@
+.text-link{
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}

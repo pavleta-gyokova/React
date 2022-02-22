@@ -1,0 +1,6 @@
+.listing-section{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap; /*equally place the children on the same row based on the total width and push the next on the next row*/
+    margin: 20px;
+}

@@ -1,0 +1,107 @@
+.create-property-img-upload{
+    cursor: pointer;
+}
+.create-property{
+padding-top: 40px;
+}
+.create-property-form-group{
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+.create-property-icon{
+    font-size: 50px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.create-listing-button{
+    margin: 20px 0px 0px 6%;
+    padding: auto;
+    width: 50.5vw;
+    height: 40px;
+    cursor: pointer;
+    background-color: #C2DFE3 ;
+    border: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.create-property-info{
+    line-height: 18px;
+    width: 50vw;
+    height: 30px;
+    font-size: 16px;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.create-listing-desc{
+    margin-top: 20px;
+    height: 60px;
+}
+
+select {
+    box-shadow:none;
+    background-color: #C2DFE3;
+    background-image: none;
+    padding: 0 .5em;
+    width: 120px;
+    height: 25px;
+    color:var(--primary-color);
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 90px;
+    margin-bottom: 10px;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: absolute;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #253237;
+ }
+ label{
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+
+ }
+
+.property-primary-info{
+    box-shadow:none;
+    background-image: none;
+    padding: 0 .5em;
+    width: 120px;
+    height: 22px;
+    color:var(--primary-color);
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import React, {useEffect} from 'react';
 import { auth, createUserProfileDocument } from '../firebase/firebase.utils';
 
 function useAuthUser(props) {

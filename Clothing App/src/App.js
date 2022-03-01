@@ -1,8 +1,7 @@
 import React from 'react';
 import useAuthUser from './hooks/useAuthUser';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import { connect, useSelector } from 'react-redux';
 
 import './App.css';
 
@@ -17,6 +16,7 @@ import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
 const App = (props) => {
+  const currentUser = useSelector(selectCurrentUser);
   useAuthUser(props);
     return (
       <div>
@@ -29,7 +29,7 @@ const App = (props) => {
             exact
             path='/signin'
             render={() =>
-              props.currentUser ? (
+              currentUser ? (
                 <Redirect to='/' />
               ) : (
                   <SignInAndSignUpPage />
@@ -40,16 +40,11 @@ const App = (props) => {
       </div>
     );
 }
-
-const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
-});
-
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
 export default connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps
 )(App);
